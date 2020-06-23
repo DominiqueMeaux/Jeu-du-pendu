@@ -58,4 +58,14 @@ public class Clavier extends GridPane {
             column++;
         }
     }
+
+
+    /**
+     * Réinitialisation des touches du clavier en cas de nouvelle partie
+     */
+    public void resetTouches() {
+        for (Touche t: mesTouches){
+            t.setDisable(false);
+        }
+    }
 }

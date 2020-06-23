@@ -59,7 +59,37 @@ public class Touche extends Button {
                     break;
 
             }
-            setDisabled (true);
+            if(Partie.getInstance ().getMonJeu ().isMotTrouve ()){
+                System.out.println ("Bravo, vous avez gagné !");
+                if(new BoxDialogue("Fin de partie",  "Vous avez trouvé le mot mystère : " + Partie.getInstance ().getMonJeu ().getMotCourant (),
+                         "Voulez-vous rejouer ?").isOk ()){
+                    Partie.getInstance().nouvellePartie ();
+                    saisie.afficherMotMystere ();
+                    pendu.dessine ();
+                    saisie.getClavier ().resetTouches ();
+
+                }
+                else {
+                    System.exit (0);
+                }
+            }
+            else if (Partie.getInstance ().getMonJoueur ().isPendu ()){
+                System.out.println ("Vous avez perdu !");
+                if(new BoxDialogue("Fin de partie",  "Vous n'avez pas trouvé le mot mystère :  " + Partie.getInstance ().getMonJeu ().getMotCourant (),
+                        "Voulez-vous rejouer ?").isOk ()){
+                    Partie.getInstance().nouvellePartie ();
+                    saisie.afficherMotMystere ();
+                    pendu.dessine ();
+                    saisie.getClavier ().resetTouches ();
+
+                }
+                else {
+                    System.exit (0);
+                }
+            }
+            else {
+                setDisable (true);
+            }
         });
     }
 
