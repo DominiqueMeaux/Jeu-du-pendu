@@ -16,7 +16,7 @@ public class App extends Application {
             // Panel, Layout
             Group root = new Group();
             // Création d'une nouvelle scène
-            Scene scene = new Scene(root, 800,400, Color.AZURE);
+            Scene scene = new Scene(root, 820,400, Color.AZURE);
             Pendu pendu = new Pendu();
 
             Saisie saisie = new Saisie(pendu);

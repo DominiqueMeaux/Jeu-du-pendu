@@ -17,7 +17,7 @@ public class Touche extends Button {
         this.pendu = pendu;
         this.saisie = saisie;
         this.valeur = valeur;
-        setPrefSize (20, 20);
+        setPrefSize (55, 45);
         setStyle ("-fx-background-color: "
                 + "linear-gradient(#020b02, #3a3a3a),"
                 + "linear-gradient(#9d9e9d 0%, #6b6a6b 20%, #343534 80%, #242424 100%),"
@@ -27,7 +27,7 @@ public class Touche extends Button {
                 + "-fx-background-radius: 9,8,5,4,3;"
                 + "-fx-padding: 15 20 15 20;"
                 + "-fx-font-family: \"Helvetica\";"
-                + "-fx-font-size: 15px;"
+                + "-fx-font-size: 12px;"
                 + "-fx-font-weight: bold;"
                 + "-fx-text-fill: white;"
                 + "-fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1));"

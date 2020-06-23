@@ -23,7 +23,7 @@ public class Pendu extends Parent {
         // Taille
         pane.setPrefSize (400, 350);
         // Positionnement
-        pane.setTranslateX (0);
+        pane.setTranslateX (10);
         pane.setTranslateY (0);
         getChildren().add(pane);
         // Appel de la fonction dessine
