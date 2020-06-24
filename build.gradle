@@ -7,6 +7,9 @@ plugins {
 group 'org.dom'
 version '1.0-SNAPSHOT'
 
+sourceSets.main.resources.srcDirs("src/main/java").includes.addAll(["**/*.fxml", "**/*.css","**/*.png"])
+sourceSets.main.resources.srcDirs("src/main/resources").includes.addAll(["**/*.*"])
+
 repositories {
     mavenCentral()
 }
@@ -20,4 +23,4 @@ javafx {
     modules = ['javafx.controls', 'javafx.base', 'javafx.graphics', 'javafx.fxml']
 }
 
-mainClassName = 'org.dom.App'
+mainClassName = 'org.dom.Launch'

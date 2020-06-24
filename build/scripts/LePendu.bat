@@ -82,7 +82,7 @@ set CMD_LINE_ARGS=%*
 set CLASSPATH=%APP_HOME%\lib\LePendu-1.0-SNAPSHOT.jar;%APP_HOME%\lib\javafx-fxml-14-win.jar;%APP_HOME%\lib\javafx-controls-14-win.jar;%APP_HOME%\lib\javafx-controls-14.jar;%APP_HOME%\lib\javafx-graphics-14-win.jar;%APP_HOME%\lib\javafx-graphics-14.jar;%APP_HOME%\lib\javafx-base-14-win.jar;%APP_HOME%\lib\javafx-base-14.jar
 
 @rem Execute LePendu
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %LE_PENDU_OPTS%  -classpath "%CLASSPATH%" org.dom.App %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %LE_PENDU_OPTS%  -classpath "%CLASSPATH%" org.dom.Launch %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

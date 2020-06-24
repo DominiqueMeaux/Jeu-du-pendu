@@ -10,6 +10,11 @@ import javafx.stage.Stage;
 
 public class App extends Application {
 
+
+
+
+
+
         @Override
         public void start(Stage primaryStage) throws Exception{
             Partie.getInstance().nouvellePartie ();
@@ -28,7 +33,9 @@ public class App extends Application {
             primaryStage.show();
         }
 
-
+    public static void main (String[] args) {
+        launch(args);
+    }
 
     }
 
